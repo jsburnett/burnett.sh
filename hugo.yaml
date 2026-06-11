@@ -1,0 +1,24 @@
+baseURL: "https://burnett.sh/"
+title: "Joshua's Notebook"
+theme: PaperMod
+enableRobotsTXT: true
+
+params:
+  defaultTheme: auto
+  ShowCodeCopyButtons: true
+  ShowReadingTime: true
+  ShowToc: true
+  author: Joshua Burnett
+  homeInfoParams:
+    Title: "Joshua's Notebook"
+    Content: "Research, findings and other field notes..."
+  socialIcons:
+    - name: github
+      url: "https://github.com/jsburnett"
+    - name: linkedin
+      url: "https://linkedin.com/in/joshua-burnett-2021"
+
+markup:
+  highlight:
+    style: monokai
+    lineNos: true
