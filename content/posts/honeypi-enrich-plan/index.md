@@ -1,6 +1,6 @@
 ---
 title: "HoneyPi Part 3: Enrichment Planning"
-date: 2026-06-12
+date: 2026-06-13
 tags: [dshield, honeypot, enrichment, ai, loki, grafana, tcpdump, zeek, isc-internship]
 draft: false
 ---
