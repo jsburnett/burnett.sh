@@ -2,7 +2,7 @@
 title: "HoneyPi Part 3: Enrichment Planning"
 date: 2026-06-12
 tags: [dshield, honeypot, enrichment, ai, loki, grafana, tcpdump, zeek, isc-internship]
-draft: true
+draft: false
 ---
 
 Now we get into the part of the project that I have little to no experience in. While I have used the tools, I don't have years of working knowledge and I have certainly never combined them in this way in an attempt to build a narrative around an attack. Thus enter my good buddy Claude to fill in the gaps.
