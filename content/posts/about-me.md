@@ -3,7 +3,7 @@ title: About Me
 date: 2026-06-14
 featured: true
 ---
-At the time of writing, I'm 42 years old and the CTO of a small co-op in Alabama. I have been married to my best friend for almost 20 years and we have three incredible children. I am a Marine Corps Veteran (0311, E5) and have an associate degree from [Valley Forge Military College](https://www.vfmac.edu/) in Wayne, PA. Currently I am enrolled in SEC511 through the BACS program through the [SANS Technology Institute](https://sans.edu), as well as the SANS ISC Internship that is part of that program. Last year I was on the Dean's List and hopefully, God willing, I will finally have my bachelor's before the year is out.
+At the time of writing, I'm 42 years old and the CTO of a small co-op in Alabama. I have been married to my best friend for almost 20 years and we have three incredible children. I am a Marine Corps Veteran (0311, E5) and have an associate degree from [Valley Forge Military College](https://www.vfmac.edu/) in Wayne, PA. Currently I am enrolled in the SEC511 of the BACS program through the [SANS Technology Institute](https://sans.edu), as well as the SANS ISC Internship that is part of that program. Last year I was on the Dean's List and hopefully, God willing, I will finally have my bachelor's before the year is out.
 <!--more-->
 That's the tldr... who I have been, the quick high points, and where I am now. The next bit is much more detailed and long; so if you are just bored and want something to read...
 
