@@ -1,0 +1,23 @@
+{{- define "main" }}
+
+{{- if site.Params.homeInfoParams }}
+  {{- partial "home_info.html" . }}
+{{- end }}
+
+{{- $featured := where site.RegularPages "Params.featured" "==" true }}
+{{- range first 1 $featured }}
+  {{- partial "home_post_card.html" . }}
+{{- end }}
+
+<hr class="bio-divider" />
+
+{{- $posts := where site.RegularPages "Type" "posts" }}
+{{- range $posts }}
+  {{- if ne (.Param "featured") true }}
+    {{- partial "home_post_card.html" . }}
+  {{- end }}
+{{- end }}
+
+{{- partial "pagination.html" . }}
+
+{{- end }}

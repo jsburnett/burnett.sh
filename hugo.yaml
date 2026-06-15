@@ -10,8 +10,8 @@ params:
   ShowToc: true
   author: Joshua Burnett
   homeInfoParams:
-    Title: "Joshua's Notebook"
-    Content: "Research, findings and other field notes..."
+    Title: "Research, findings and other field notes..."
+    Content: "GSEC - GCIH - GSLC - GPYC - GCIA - GICSP"
   socialIcons:
     - name: github
       url: "https://github.com/jsburnett"

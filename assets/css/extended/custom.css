@@ -1,0 +1,14 @@
+.bio-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+.profile,
+.entry-content {
+  min-height: unset;
+}
+.first-entry {
+    min-height: 0;
+    
+    }
+}
