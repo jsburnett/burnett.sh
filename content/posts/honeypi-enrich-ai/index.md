@@ -13,7 +13,7 @@ tags:
 draft: false
 ---
 
-The [previous two](/posts/enrich-honeypi/) [posts](/posts/enrich-mac/) got all three streams into Loki, unified by `src_ip` and joinable by Community ID. That's a powerful dataset, but it has a problem: it's enormous. A single day produces tens of thousands of Cowrie events, thousands of Suricata alerts, and thousands of Zeek records. Nobody is reading that by hand every morning. This post covers the layer that makes the whole thing usable, a Python script that pulls the day's data, scores attackers by how interesting they are, and hands the most significant ones to Claude to write up as per-attacker narratives.
+The [previous two](/posts/honeypi-enrich-pi/) [posts](/posts/honeypi-enrich-mac/) got all three streams into Loki, unified by `src_ip` and joinable by Community ID. That's a powerful dataset, but it has a problem: it's enormous. A single day produces tens of thousands of Cowrie events, thousands of Suricata alerts, and thousands of Zeek records. Nobody is reading that by hand every morning. This post covers the layer that makes the whole thing usable, a Python script that pulls the day's data, scores attackers by how interesting they are, and hands the most significant ones to Claude to write up as per-attacker narratives.
 
 This was the original motivation for the entire project. The dashboards are great for investigating something I already know to look at, but the report is what tells me *what* to look at. It's the tier-1 triage I'd otherwise do by hand, done while I sleep.
 

@@ -14,7 +14,7 @@ tags:
 draft: false
 ---
 
-In the [previous post](/posts/enrich-honeypi/) I got two of the three streams live on the Pi: Cowrie and Suricata, both shipping to Loki through Alloy with a shared `src_ip` key. This post covers the Mac side, which is where the third stream comes in and where the whole correlation idea stops being a diagram and starts being something you can actually query. By the end of it, one attacker IP lights up across all three tools at once, and any single network flow can be matched between Suricata and Zeek deterministically rather than by eyeballing timestamps.
+In the [previous post](/posts/honeypi-enrich-pi/) I got two of the three streams live on the Pi: Cowrie and Suricata, both shipping to Loki through Alloy with a shared `src_ip` key. This post covers the Mac side, which is where the third stream comes in and where the whole correlation idea stops being a diagram and starts being something you can actually query. By the end of it, one attacker IP lights up across all three tools at once, and any single network flow can be matched between Suricata and Zeek deterministically rather than by eyeballing timestamps.
 
 As before, full files are in the [honeypi repo](https://github.com/jsburnett/honeypi); the snippets here are the parts worth understanding.
 
@@ -28,7 +28,7 @@ The flow is: tcpdump on the Pi writes hourly gzipped PCAPs to `/mnt/dshield/pcap
 
 ## Pulling the PCAPs
 
-The direction of transfer matters here, and it's dictated by the FortiGate rules from [the network post](/posts/network/). The Pi cannot initiate connections to the internal network; that outbound deny is the actual security boundary of the whole deployment. So the Mac has to *pull*, reaching the Pi over the one admin path that's allowed: SSH on port 12222.
+The direction of transfer matters here, and it's dictated by the FortiGate rules from [the network post](/posts/honeypi-network/). The Pi cannot initiate connections to the internal network; that outbound deny is the actual security boundary of the whole deployment. So the Mac has to *pull*, reaching the Pi over the one admin path that's allowed: SSH on port 12222.
 
 That's what the top of [`zeek_batch.sh`](https://github.com/jsburnett/honeypi/blob/main/mac/zeek_batch.sh) does:
 
@@ -206,5 +206,5 @@ Open the dashboard, set the time range to cover recent captures, and pivot the A
 
 ![loki](loki-dash.png)
 
-What's left is making sense of it all without manually reading thousands of events a day. That's the AI reporting layer, and it's the [final post](/posts/enrich-ai-reporting/).
+What's left is making sense of it all without manually reading thousands of events a day. That's the AI reporting layer, and it's the [final post](/posts/honeypi-enrich-ai/).
 
