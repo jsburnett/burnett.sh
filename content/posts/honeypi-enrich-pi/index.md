@@ -1,5 +1,5 @@
 ---
-title: "HoneyPi Part 4: Enrichment on the Pi, Alloy, Cowrie, and Suricata"
+title: "HoneyPi Part 4: Setting up the Streams on the Pi"
 date: 2026-06-15T08:00:00-05:00
 tags: [dshield, honeypot, alloy, cowrie, suricata, loki, grafana, isc-internship]
 draft: false

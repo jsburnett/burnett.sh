@@ -1,5 +1,5 @@
 ---
-title: "HoneyPi Part 5: Enrichment on the Mac, Zeek, Loki, and Crossing the Streams"
+title: "HoneyPi Part 5: Combining the Streams on the Mac"
 date: 2026-06-16T09:00:00-05:00
 tags:
   - dshield

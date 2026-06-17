@@ -1,5 +1,5 @@
 ---
-title: "HoneyPi Part 6: AI Reporting, Turning Three Streams into a Daily Brief"
+title: "HoneyPi Part 6: AI Reporting"
 date: 2026-06-17T10:00:00-05:00
 tags:
   - dshield
