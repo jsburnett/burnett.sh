@@ -1,8 +1,8 @@
 ---
 title: "HoneyPi: A Sample AI-Generated Threat Report"
-date: 2026-06-17
+date: 2026-06-18
 tags: [dshield, honeypot, threat-intelligence, ai, claude, cowrie, suricata, zeek, isc-internship]
-draft: true
+draft: false
 ---
 
 > I wanted to post a sample of the AI-Generated reporting that I was able to achieve with
