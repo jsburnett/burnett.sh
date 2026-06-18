@@ -5,22 +5,22 @@ tags: [dshield, honeypot, threat-intelligence, ai, claude, cowrie, suricata, zee
 draft: false
 ---
 
-> I wanted to post a sample of the AI-Generated reporting that I was able to achieve with
-> only a little bit of tweaking to the prompts in the base script. The value add here for
-> someone in my position with limited time and resources is incredible. My next
-> implementation of this, will be internal focused on that Security Onion stack and the 
-> report will be directed at what I need to address daily on my internal assets. 
-> 
-> The point worth making again here is the tier-1 triage value: instead of paging
-> through 13,000+ Cowrie events and 8,000 Suricata alerts by hand, the report surfaces
-> the handful of actors that actually matter, ties their behavior together across
-> streams, and maps it to MITRE ATT&CK. The four-IP `libredtail-http` cluster below is
-> a good example of something that is genuinely hard to spot eyeballing raw logs but
-> falls out cleanly once the streams are correlated.
-> 
-> I will be posting a follow up project for the internal SO stuff in the coming weeks. 
-> They will be scrubbed quite a bit more since it will be internal traffic but I will layout
-> how I set it up much like with this HoneyPi.
+I wanted to post a sample of the AI-Generated reporting that I was able to achieve with
+only a little bit of tweaking to the prompts in the base script. The value add here for
+someone in my position with limited time and resources is incredible. My next
+implementation of this, will be internal focused on that Security Onion stack and the 
+report will be directed at what I need to address daily on my internal assets. 
+
+The point worth making again here is the tier-1 triage value: instead of paging
+through 13,000+ Cowrie events and 8,000 Suricata alerts by hand, the report surfaces
+the handful of actors that actually matter, ties their behavior together across
+streams, and maps it to MITRE ATT&CK. The four-IP `libredtail-http` cluster below is
+a good example of something that is genuinely hard to spot eyeballing raw logs but
+falls out cleanly once the streams are correlated.
+
+I will be posting a follow up project for the internal SO stuff in the coming weeks. 
+They will be scrubbed quite a bit more since it will be internal traffic but I will layout
+how I set it up much like with this HoneyPi.
 
 The full report, exactly as the pipeline produced it, follows.
 
