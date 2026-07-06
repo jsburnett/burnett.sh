@@ -1,5 +1,5 @@
 ---
-title: "Deploying a FortiSwitch MCLAG Pair Under a FortiGate HA Cluster (FortiLink, FortiOS 7.6)"
+title: "FortiSwitch MCLAG Pair / FortiGate HA Cluster (FortiLink, FortiOS 7.6)"
 date: 2026-07-06T00:00:00-05:00
 draft: false
 tags:
@@ -23,8 +23,6 @@ categories:
   - Fortinet
 summary: "Standing up two FortiSwitches as an active-active MCLAG pair behind an HA FortiGate over FortiLink, including the firmware-skew and hidden mclag-icl CLI gotchas the official docs skip."
 ---
-
-# Deploying a FortiSwitch MCLAG Pair Under a FortiGate HA Cluster (FortiLink, FortiOS 7.6)
 
 A field guide to standing up two FortiSwitches as an active-active MCLAG pair behind an HA FortiGate, with the gotchas the official docs gloss over.
 
