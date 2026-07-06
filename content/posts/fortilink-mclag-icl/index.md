@@ -1,12 +1,37 @@
+---
+title: "Deploying a FortiSwitch MCLAG Pair Under a FortiGate HA Cluster (FortiLink, FortiOS 7.6)"
+date: 2026-07-06T00:00:00-05:00
+draft: false
+tags:
+  - FortiSwitch
+  - FortiGate
+  - MCLAG
+  - FortiLink
+  - FortiOS 7.6
+  - HA cluster
+  - ICL
+  - auto-ISL
+  - FS-424E
+  - FortiGate 121G
+  - split-brain detection
+  - OT segmentation
+  - NERC CIP
+  - networking
+  - Fortinet
+categories:
+  - Networking
+  - Fortinet
+summary: "Standing up two FortiSwitches as an active-active MCLAG pair behind an HA FortiGate over FortiLink, including the firmware-skew and hidden mclag-icl CLI gotchas the official docs skip."
+---
+
 # Deploying a FortiSwitch MCLAG Pair Under a FortiGate HA Cluster (FortiLink, FortiOS 7.6)
 
 A field guide to standing up two FortiSwitches as an active-active MCLAG pair behind an HA FortiGate, with the gotchas the official docs gloss over.
 
 ## Why this writeup exists
 
-This is a heavily AI generated write up on my experience with creating an MCLAG pair under my HA FortiGate. As with everything I do, its a trial by fire learning experience, diving in head first. I started having trouble parsing the exact steps I needed to take setting up the MCLAG from online documentation, and had to revert a couple of times after coming to dead ends. The breakdown below is generated from my troubleshooting, note taking and AI conversations on the matter. 
-I use Claude to work through things like this, keep track of my notes and generate a "lessons learned" after the fact. I find it extremely handy and efficient. This is by no means an answer to everyones problem, and there may be a different way to accomplish this setup, or even a better way. This is simply more information to place on the web to help someone along who may be stuck on any given point. 
-The rest of the post repeats itself a little here and there as AI does. :) 
+This details the struggles I had creating an MCLAG pair under my HA FortiGate. As with everything I do, its a trial by fire learning experience, diving in head first. I started having trouble parsing the exact steps I needed to take setting up the MCLAG from online documentation, and had to revert a couple of times after coming to dead ends. The breakdown below is generated from my troubleshooting, note taking and AI conversations on the matter. 
+I use Claude to work through things like this, keep track of my notes and generate a "lessons learned" after the fact. I find it extremely handy and efficient. This is by no means an answer to everyones problem, and there may be a different way to accomplish this setup, or even a better way. This is simply more information to place on the web to help someone along who may be stuck on any given point. From this point forward the post will read a little more like AI, because much of it is generated from the aformentioned not taking sesh... 
 
 1. **Firmware skew silently breaks auto-ICL formation** even when everything looks healthy.
 2. **Promoting the inter-switch link to an MCLAG-ICL is a switch-CLI step that the FortiGate deliberately hides**, and by the time you need it, getting onto the switch CLI is painful.
