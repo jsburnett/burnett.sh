@@ -11,7 +11,7 @@ params:
   author: Joshua Burnett
   homeInfoParams:
     Title: "Research, findings and other field notes..."
-    Content: "GSEC - GCIH - GSLC - GPYC - GCIA - GICSP"
+    Content: "GSEC - GCIH - GSLC - GPYC - GCIA - GICSP - GMON"
   socialIcons:
     - name: github
       url: "https://github.com/jsburnett/cybersecurity-portfolio"
