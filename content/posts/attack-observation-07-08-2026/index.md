@@ -1,7 +1,7 @@
 ---
-title: "Third Attack Observation: RedTail Cryptominer Delivered over SSH"
+title: "Attack Observation: RedTail Cryptominer Delivered over SSH"
 date: 2026-07-08T09:00:00-05:00
-draft: true
+draft: false
 summary: "A SSH-2.0-Go actor at 130.12.180.51 brute forced HoneyPi, then ran a two-stage shell loader, implanted an authorized_keys entry for persistence, and dropped six architecture-specific RedTail payloads over SFTP. Same bundle seen from a second IP two weeks earlier points to shared tooling."
 description: "Incident writeup of a RedTail cryptominer campaign against a DShield honeypot: default-credential SSH access, two-stage loader, SFTP payload delivery, MITRE ATT&CK mapping, and threat intel on the source infrastructure."
 tags:
