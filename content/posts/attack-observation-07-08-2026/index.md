@@ -89,3 +89,20 @@ Unlike the earlier credential-validation sweep, this actor left a rich set of po
 | clean.sh, setup.sh | Two-stage loader filenames dropped via SFTP to /root/. |
 | authorized_keys ending …AscVxegv66I5yu | SSH key implanted for persistence (distinct from the mdrfckr campaign key). |
 | 6x SHA-256 (see table above) | RedTail cryptominer ELF set plus loader/installer scripts. |
+
+
+## References
+
+1. [MITRE ATT&CK T1021.004 — Remote Services: SSH](https://attack.mitre.org/techniques/T1021/004/)
+2. [MITRE ATT&CK T1110.001 — Brute Force: Password Guessing](https://attack.mitre.org/techniques/T1110/001/)
+3. [MITRE ATT&CK T1078.001 — Valid Accounts: Default Accounts](https://attack.mitre.org/techniques/T1078/001/)
+4. [MITRE ATT&CK T1059.004 — Command and Scripting Interpreter: Unix Shell](https://attack.mitre.org/techniques/T1059/004/)
+5. [MITRE ATT&CK T1105 — Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105/)
+6. [MITRE ATT&CK T1098.004 — Account Manipulation: SSH Authorized Keys](https://attack.mitre.org/techniques/T1098/004/)
+7. [MITRE ATT&CK T1222 — File and Directory Permissions Modification](https://attack.mitre.org/techniques/T1222/)
+8. [MITRE ATT&CK T1070.004 — Indicator Removal: File Deletion](https://attack.mitre.org/techniques/T1070/004/)
+9. [MITRE ATT&CK T1562.001 — Impair Defenses: Disable or Modify Tools](https://attack.mitre.org/techniques/T1562/001/)
+10. [MITRE ATT&CK T1496 — Resource Hijacking](https://attack.mitre.org/techniques/T1496/)
+11. [SANS ISC — RedTail delivered via CVE-2024-4577 (diary 32936)](https://isc.sans.edu/diary/32936)
+12. [HoneyPi enrichment script (enrich.py)](https://github.com/jsburnett/honeypi/blob/main/reporting/enrich.py)
+13. [HoneyPi example enrichment report (130.12.180.51)](https://github.com/jsburnett/honeypi/blob/main/examples/enrichment-130.12.180.51.md)
